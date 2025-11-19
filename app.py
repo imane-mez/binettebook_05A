@@ -40,3 +40,7 @@ def index():
     with bd.creer_connexion() as conn:
         utilisateurs = bd.get_utilisateurs(conn)
     return render_template('index.jinja', utilisateurs=utilisateurs)
+
+
+if __name__ == '__main__':
+    app.run()
